@@ -51,8 +51,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qt0-Jc-vpW">
                                 <rect key="frame" x="149" y="162" width="76" height="30"/>
                                 <state key="normal" title="Is It Prime?"/>
+                                <connections>
+                                    <action selector="isItPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mK6-eY-Zux"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-xu-gnY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a positive whole number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-xu-gnY">
                                 <rect key="frame" x="16" y="200" width="343" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="qqv-2s-RTS"/>
@@ -79,6 +82,10 @@
                             <constraint firstItem="Qt0-Jc-vpW" firstAttribute="top" secondItem="xlp-lv-GJW" secondAttribute="bottom" constant="29" id="qoq-Ut-lPj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="xlp-lv-GJW" id="l5j-Yr-jjL"/>
+                        <outlet property="resultLabel" destination="hdg-xu-gnY" id="WRq-Ey-TK3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
